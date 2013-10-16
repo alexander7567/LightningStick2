@@ -1,5 +1,5 @@
-name: LightningStick
-main: com.alexriggs.bukkit.lightningstick.LightningStick
+name: LightningStick2
+main: com.alexriggs.bukkit.lightningstick2.LightningStick2
 version: 1.1
 description: Allows user with correct permissions to strike lighting by clicking with stick.
 author: alexander7567
