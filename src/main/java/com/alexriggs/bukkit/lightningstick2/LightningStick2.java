@@ -1,7 +1,12 @@
 package com.alexriggs.bukkit.lightningstick2;
 
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.Random;
+
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -21,6 +26,18 @@ public final class LightningStick2 extends JavaPlugin implements Listener {
 		getLogger().info("LightningStick enabled. Visit https://alexriggs.com/viewforum.php?f=150 for support!");
 		getServer().getPluginManager().registerEvents(this, this);
 		this.saveDefaultConfig();
+		URL url;
+		try {
+			url = new URL("http://alexriggs.com/test.php");
+			URLConnection connection = url.openConnection();
+			connection.connect();
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override
