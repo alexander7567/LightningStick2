@@ -1,0 +1,5 @@
+# strikesOnRightClick is the number of strikes that will be spawned on a right click
+strikesOnRightClick: 100
+
+# effectOnly does not cause fire or player damage if set to true
+effectOnly: false

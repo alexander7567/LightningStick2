@@ -1,0 +1,22 @@
+name: LightningStick
+main: com.alexriggs.bukkit.lightningstick.LightningStick
+version: 1.1
+description: Allows user with correct permissions to strike lighting by clicking with stick.
+author: alexander7567
+website: http://dev.bukkit.org/bukkit-plugins/lightningstick/
+commands:
+    lightningstick:
+        description: Interfaces with the LightningStick plugin
+        aliases: [lstick]
+        permission: lightningstick.reload
+permissions:
+    lightningstick.*:
+        description: Gives access to all LightningStick commands
+        children:
+            lightningstick.use: true
+    lightningstick.use:
+        description: Allows player to use the LightningStick
+        default: op
+    lightningstick.reload:
+        description: Reloads config file from disk
+        default: op
